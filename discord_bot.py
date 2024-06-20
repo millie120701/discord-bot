@@ -11,64 +11,6 @@ import requests
 
 
 
-
-url = "https://discord.com/api/v10/applications/1118513672835301459/commands"
-json = {
-    "name": "blep",
-    "type": 1,
-    "description": "Send a random adorable animal photo",
-    "options": [
-        {
-            "name": "animal",
-            "description": "The type of animal",
-            "type": 3,
-            "required": True,
-            "choices": [
-                {
-                    "name": "Dog",
-                    "value": "animal_dog"
-                },
-                {
-                    "name": "Cat",
-                    "value": "animal_cat"
-                },
-                {
-                    "name": "Penguin",
-                    "value": "animal_penguin"
-                }
-            ]
-        },
-        {
-            "name": "only_smol",
-            "description": "Whether to show only baby animals",
-            "type": 5,
-            "required": False
-        }
-    ]
-}
-
-# For authorization, you can use either your bot token
-headers = {
-    "Authorization": "Bot FunionBot#9084"
-}
-
-
-r = requests.post(url, headers=headers, json=json)
-
-
-
-
-reddit= praw.Reddit(
-    client_id="KGm4wiSMA0UNCOnLa0wjKQ",
-    client_secret="_HWsTH494M17czrc6mKWygDo7cVY8w",
-    username="FunionBot",
-    password="78787890Hi!",
-    user_agent="funionbot"
-)
-
-
-
-
 BOT_TOKEN = "MTExODUxMjI1MDA0MzUwMjU5Mw.Gx8AXg.iCFnjTqRwi6fQj4byuTu9eDrvlgTzHcY4bQXbk"
 CHANNEL_ID = 1118513672835301459
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
