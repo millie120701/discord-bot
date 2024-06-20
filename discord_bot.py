@@ -6,14 +6,13 @@ import praw
 from musicmain import *
 from windpower import *
 import re
-from funionpraw import *
 import requests
 
 
 
-BOT_TOKEN = "MTExODUxMjI1MDA0MzUwMjU5Mw.Gx8AXg.iCFnjTqRwi6fQj4byuTu9eDrvlgTzHcY4bQXbk"
-CHANNEL_ID = 1118513672835301459
-bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
+# BOT_TOKEN = "MTExODUxMjI1MDA0MzUwMjU5Mw.Gx8AXg.iCFnjTqRwi6fQj4byuTu9eDrvlgTzHcY4bQXbk"
+# CHANNEL_ID = 1118513672835301459
+# bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 
 
 intents = discord.Intents.default()
